@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TodoList</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+    <string name="action_backup">备份</string>
+    <string name="action_recovery">恢复</string>
+</resources>

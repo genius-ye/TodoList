@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.mobeta.android.dslv.DragSortListView
+            android:id="@+id/content_main_dragsortlistview"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="4"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            app:remove_enabled="true"
+            app:remove_mode="flingRemove"
+            app:drag_handle_id="@id/drag_handle"
+            app:fling_handle_id="@id/remove_handle"
+            app:float_background_color="@android:color/transparent"
+            app:drag_enabled="true"
+            app:use_default_controller="true"
+            app:drag_scroll_start="0.33"
+            app:slide_shuffle_speed="0.3"
+            />
+
+        <!--app:collapsed_height="1px"-->
+        <!--app:drag_enabled="true"-->
+        <!--app:drag_scroll_start="0.33"-->
+        <!--app:drag_start_mode="onDown"-->
+        <!--app:float_alpha="0.6"-->
+        <!--app:remove_enabled="true"-->
+        <!--app:remove_mode="flingRemove"-->
+        <!--app:slide_shuffle_speed="0.3"-->
+
+
+    </LinearLayout>
+</RelativeLayout>

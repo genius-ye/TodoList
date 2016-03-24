@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/view_list_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:checked="false"
+        android:layout_centerVertical="true"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/view_list_textview_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/view_list_checkBox"
+        android:layout_toLeftOf="@id/remove_handle"
+        android:gravity="center|left"
+        android:lines="2"
+        android:text="content"/>
+
+    <TextView
+        android:id="@+id/drag_handle"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="drag"
+        android:textColor="#33222222"
+        />
+
+    <TextView
+        android:id="@+id/remove_handle"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="remove"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:textColor="#33222222"
+        />
+
+</RelativeLayout>

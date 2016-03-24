@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              >
+
+    <EditText
+        android:id="@+id/activity_edit_editText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionDone"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/content_main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="确 定"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/activity_edit_button"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="@mipmap/comfirm"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/activity_edit_button2"
+        android:layout_above="@+id/activity_edit_button"
+        android:layout_alignLeft="@+id/activity_edit_button"
+        android:layout_alignStart="@+id/activity_edit_button"
+        android:background="@mipmap/cancel"/>
+
+</RelativeLayout>
